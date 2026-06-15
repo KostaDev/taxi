@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zoran Taxi &#8211; Частный Водительский Сервис, Белград</title>
+  <link rel="stylesheet" href="../styles.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="#" class="logo">
+        <span class="logo-mark">Z</span>
+        <span class="logo-text">Zoran Taxi</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#why-us">Почему Мы</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Контакт</a></li>
+      </ul>
+      <a href="tel:+38163398907" class="btn btn-nav">+381 63 398 907</a>
+      <div class="lang-dropdown" id="langDropdown">
+        <button class="lang-toggle" id="langToggleBtn" aria-haspopup="true" aria-expanded="false">
+          RU <i class="fas fa-chevron-down lang-arrow"></i>
+        </button>
+        <ul class="lang-menu">
+          <li><a href="../index.html">ENG</a></li>
+          <li><a href="../sr/index.html">SRB</a></li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#why-us">Почему Мы</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Контакт</a></li>
+      <li class="mobile-lang-item"><a href="../index.html" class="lang-toggle mobile-lang-toggle">ENG &#8212; English version</a></li>
+      <li class="mobile-lang-item"><a href="../sr/index.html" class="lang-toggle mobile-lang-toggle">SRB &#8212; Srpska verzija</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content container">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Белград &#8212; Частный Водитель</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1>Удобно<br/>Надёжно<br/><em>Вовремя</em></h1>
+      <p class="hero-sub">Приятные и комфортные поездки &#8212; от трансферов в аэропорт до городских экскурсий и корпоративных поездок.</p>
+      <div class="hero-actions">
+        <a href="tel:+38163398907" class="btn btn-primary">Забронировать Поездку</a>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">30</span>
+          <span class="stat-unit">Лет</span>
+          <span class="stat-label">Опыта</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num">50k</span>
+          <span class="stat-unit">Клиентов</span>
+          <span class="stat-label">Обслужено</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-unit">Доступность</span>
+          <span class="stat-label">Всегда К Вашим Услугам</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Что Мы Предлагаем</p>
+        <h2>Наши Услуги</h2>
+        <div class="header-rule"></div>
+      </div>
+      <div class="services-image">
+        <img src="../images/audi_a6_pic2.jpg" alt="Zoran Taxi &#8211; люксовый автомобиль" loading="lazy" />
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <div class="service-body">
+            <h3>Трансферы в Аэропорт</h3>
+            <div class="service-rule"></div>
+            <p>Беспрепятственные прилёты и отправления в аэропорту Белграда Никола Тесла. Мы отслеживаем ваш рейс в режиме реального времени, чтобы ваш шофёр был готов именно в момент прилёта.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <div class="service-body">
+            <h3>Городские Экскурсии</h3>
+            <div class="service-rule"></div>
+            <p>Откройте для себя знаковые достопримечательности и скрытые жемчужины Белграда в собственном темпе в сопровождении наших осведомлённых и ненавязчивых водителей, знающих город досконально.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <div class="service-body">
+            <h3>Корпоративные Поездки</h3>
+            <div class="service-rule"></div>
+            <p>Безупречный внешний вид, абсолютная пунктуальность и полная конфиденциальность. Предпочтительный выбор руководителей, дипломатов и деловых путешественников.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <div class="service-body">
+            <h3>Междугородние Поездки</h3>
+            <div class="service-rule"></div>
+            <p>Путешествуйте за пределы Белграда в полном комфорте. Будь то Нови-Сад, Ниш или иная точка назначения &#8212; наши шофёры обеспечат элегантную поездку от двери до двери.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section section-dark" id="why-us">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-eyebrow">Почему Выбирают Нас</p>
+        <h2>Почему Ехать с Zoran Taxi</h2>
+        <div class="header-rule gold"></div>
+      </div>
+      <div class="philosophy-grid">
+        <div class="philosophy-item">
+          <div class="philosophy-icon">&#9670;</div>
+          <h4>Быстрый Отклик</h4>
+          <p>Каждое бронирование подтверждается в течение нескольких минут. Ваше время бесценно &#8212; мы относимся к нему соответственно.</p>
+        </div>
+        <div class="philosophy-item">
+          <div class="philosophy-icon">&#9670;</div>
+          <h4>Абсолютная Безопасность</h4>
+          <p>Опытный профессионал с полной лицензией и превосходным знанием города.</p>
+        </div>
+        <div class="philosophy-item">
+          <div class="philosophy-icon">&#9670;</div>
+          <h4>Удобная Оплата</h4>
+          <p>Наличные, карта или цифровые платежи &#8212; ваш предпочтительный способ оплаты принимается без затруднений.</p>
+        </div>
+        <div class="philosophy-item">
+          <div class="philosophy-icon">&#9670;</div>
+          <h4>Многоязычность</h4>
+          <p>Свободно говорит по-сербски и по-английски, обеспечивая ясность и комфорт для каждого пассажира.</p>
+        </div>
+      </div>
+
+      <div class="philosophy-quote">
+        <blockquote>
+          &#171;Роскошь &#8212; это не скорость, а качество самого путешествия.&#187;
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Отзывы Клиентов</p>
+        <h2>Что Говорят Наши Гости</h2>
+        <div class="header-rule"></div>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="quote-mark">&#8220;</div>
+          <p>Я воспользовалась Zoran Taxi для трансфера из аэропорта в 4 утра. Шофёр ждал меня после посадки, автомобиль был безупречен, а поездка прошла в полной тишине и плавно.</p>
+          <div class="testimonial-author">
+            <div class="author-line"></div>
+            <span>Ana M. &#8212; Белград</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="quote-mark">&#8220;</div>
+          <p>Будучи гостем Белграда, Zoran Taxi сделал моё пребывание по-настоящему особенным. Водитель был осведомлён, профессионален и на протяжении всей поездки создавал атмосферу полного комфорта.</p>
+          <div class="testimonial-author">
+            <div class="author-line"></div>
+            <span>James T. &#8212; Лондон</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="quote-mark">&#8220;</div>
+          <p>Наша компания доверяет Zoran Taxi все деловые трансферы. Их последовательность, конфиденциальность и профессионализм не имеют аналогов в Белграде.</p>
+          <div class="testimonial-author">
+            <div class="author-line"></div>
+            <span>Nikola R. &#8212; Генеральный Директор</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Быстрые Ответы</p>
+        <h2>Часто Задаваемые Вопросы</h2>
+        <div class="header-rule"></div>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary class="faq-question">Как забронировать поездку?</summary>
+          <div class="faq-answer">
+            <p>Лучший способ &#8212; связаться с нами напрямую через <strong>Viber</strong>, <strong>WhatsApp</strong> или <strong>Telegram</strong>, либо отправить письмо на адрес <a href="mailto:zoran.u.jovanovic@gmail.com">zoran.u.jovanovic@gmail.com</a>. Наша команда доступна 24/7 и подтвердит бронирование в кратчайшие сроки.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Как рассчитывается стоимость?</summary>
+          <div class="faq-answer">
+            <p>Стоимость рассчитывается в зависимости от <strong>типа услуги</strong> и <strong>продолжительности поездки</strong>. Для точного расчёта свяжитесь с нами напрямую &#8212; мы с удовольствием поможем.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Разрешены ли домашние животные?</summary>
+          <div class="faq-answer">
+            <p>Все <strong>маленькие и средние домашние животные</strong> приветствуются в наших автомобилях. Обратите внимание, что перевозка животных требует <strong>дополнительной оплаты</strong>. По возможности просим перевозить питомцев в переноске.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-eyebrow">Свяжитесь С Нами</p>
+        <h2>Контакт</h2>
+        <div class="header-rule gold"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h4>Телефон</h4>
+          <a href="tel:+38163398907">+381 63 398 907</a>
+        </div>
+        <div class="contact-item">
+          <h4>Электронная Почта</h4>
+          <a href="mailto:zoran.u.jovanovic@gmail.com">zoran.u.jovanovic@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-apps">
+        <p class="contact-apps-label">Напишите Нам Напрямую</p>
+        <div class="contact-app-links">
+          <a href="https://wa.me/38163398907" class="app-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="viber://chat?number=%2B38163398907" class="app-link" aria-label="Viber">
+            <i class="fa-brands fa-viber"></i>
+            <span>Viber</span>
+          </a>
+          <a href="https://t.me/+38163398907" class="app-link" target="_blank" rel="noopener" aria-label="Telegram">
+            <i class="fa-brands fa-telegram"></i>
+            <span>Telegram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Zoran Taxi</span>
+        <p>Престижный шофёрский сервис Белграда<br/>с 1995 года. Точность. Конфиденциальность. Комфорт.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Навигация</h5>
+        <ul>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#why-us">Почему Мы</a></li>
+          <li><a href="#contact">Контакт</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-rule"></div>
+      <p>&copy; 2026 Zoran Taxi. Все права защищены. &nbsp;|&nbsp; Белград, Сербия</p>
+    </div>
+  </footer>
+
+  <!-- Fixed CTA -->
+  <a href="tel:+38163398907" class="fixed-cta" id="fixedCta">
+    <span class="fixed-cta-icon">&#9990;</span>
+    <span class="fixed-cta-text">Позвонить</span>
+  </a>
+
+  <script src="../script.min.js"></script>
+  <script>
+    (function () {
+      var btn = document.getElementById('langToggleBtn');
+      var dropdown = document.getElementById('langDropdown');
+      if (!btn) return;
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = dropdown.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+      });
+      document.addEventListener('click', function () {
+        dropdown.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    })();
+  </script>
+</body>
+</html>

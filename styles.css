@@ -243,8 +243,8 @@ img {
   font-weight: 500;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--gold);
+  border: 1px solid var(--gold);
   padding: 6px 13px;
   transition:
     color 0.3s,
@@ -252,12 +252,16 @@ img {
     background 0.3s;
   flex-shrink: 0;
   text-decoration: none;
+  background: none;
+  cursor: pointer;
 }
 .lang-toggle:hover {
   color: var(--gold);
   border-color: var(--gold);
 }
 .mobile-lang-item {
+  color: var(--gold);
+  border-color: var(--gold);
   margin-top: 8px;
   padding-top: 8px;
 }
@@ -271,6 +275,49 @@ img {
 }
 .mobile-lang-toggle:hover {
   color: var(--gold) !important;
+}
+.lang-dropdown {
+  position: relative;
+}
+.lang-arrow {
+  font-size: 0.55rem;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+.lang-dropdown:hover .lang-arrow,
+.lang-dropdown.open .lang-arrow {
+  transform: rotate(180deg);
+}
+.lang-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: rgba(8, 8, 8, 0.97);
+  border: 1px solid var(--border-gold);
+  min-width: 110px;
+  z-index: 1001;
+  backdrop-filter: blur(12px);
+}
+.lang-dropdown:hover .lang-menu,
+.lang-dropdown.open .lang-menu {
+  display: block;
+}
+.lang-menu li a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 0.65rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+.lang-menu li a:hover {
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.07);
 }
 .hero {
   min-height: 100vh;
@@ -1073,18 +1120,42 @@ details[open] > .faq-question::after {
   .hero-content {
     max-width: 100%;
   }
+  .services-image img {
+    height: 220px;
+    object-position: center center;
+  }
+  .hero-bg {
+    background-image: url("images/audi_a6_pic1.jpg");
+    background-size: cover;
+    background-position: center 60%;
+  }
+  .hero-bg::before {
+    background:
+      linear-gradient(rgba(201, 168, 76, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201, 168, 76, 0.04) 1px, transparent 1px),
+      rgba(8, 8, 8, 0.80);
+    background-size:
+      80px 80px,
+      80px 80px,
+      auto;
+  }
   .hero-bg::after {
     display: none;
   }
   .hero-stats {
     gap: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .stat {
-    padding: 0 24px 0 0;
+    flex: 1;
+    min-width: 0;
+    padding: 0 10px 0 0;
+  }
+  .stat-num {
+    font-size: 1.8rem;
   }
   .stat-sep {
-    margin-right: 24px;
+    margin-right: 10px;
   }
   .booking-form {
     padding: 32px 24px;
@@ -1105,6 +1176,21 @@ details[open] > .faq-question::after {
   .btn {
     width: 100%;
     text-align: center;
+  }
+  .stat-num {
+    font-size: 1.5rem;
+  }
+  .stat-unit {
+    font-size: 0.6rem;
+  }
+  .stat-label {
+    font-size: 0.6rem;
+  }
+  .stat {
+    padding: 0 6px 0 0;
+  }
+  .stat-sep {
+    margin-right: 6px;
   }
   .fixed-cta {
     bottom: 20px;
